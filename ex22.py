@@ -1,0 +1,15 @@
+'''
+两个乒乓球队进行比赛，各出三人。甲队为a,b,c三人，
+乙队为x,y,z三人。已抽签决定比赛名单。有人向队员
+打听比赛的名单。a说他不和x比，c说他不和x,z比，请
+编程序找出三队赛手的名单。
+'''
+
+l = ['x', 'y', 'z']
+for i in l:
+    for j in l:
+        for k in l:
+            if i != k and j != k and i != j:
+                if i != 'x' and k != 'x' and k != 'z':
+                    print("抽签结果为：")
+                    print("a--%c\nb--%c\nc--%c\n" % (i, j, k))
